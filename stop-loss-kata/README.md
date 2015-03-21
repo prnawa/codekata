@@ -1,7 +1,5 @@
 #Stop loss kata
 
-nodejs implementation of stop loss kata following TDD
-
 ##Problem description (Trailing Stop Loss)
 
 A “trailing stop loss” is a term used in financial trading: Imagine you buy into a stock at a price of, say, 10p.
@@ -15,16 +13,3 @@ Assume that you will receive a "PriceChanged" message every time the price chang
 > For extra points...
 
 > Can you do it without holding any state except for an integer variable? What trade offs would you have to make?
-
-
-## How  to Run
-
-* Pre-requisite : NodeJs , mocha (npm install -g mocha)
-
-```
-$ git clone git@github.com:prnawa/stop-loss-kata.git
-$ cd stop-loss-kata
-$ npm install
-$ mocha
-
-```
