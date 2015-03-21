@@ -25,10 +25,10 @@ describe('Stop loss', function () {
 
         describe('price goes up to 11p', function () {
             describe('selling point', function () {
-                it.skip('should be equal to 10p - 1.1', function (done) {
+                it('should be equal to 9p - 1.1', function (done) {
                     var buyingPrice = 10;
                     var newPrice = 11;
-                    var sellingPrice = 10;
+                    var sellingPrice = 9;
                     var TrailingStopLoss = getStopLoss();
                     var trailingStopLoss = new TrailingStopLoss(buyingPrice);
                     trailingStopLoss.priceChanged(newPrice);
@@ -129,7 +129,7 @@ describe('Stop loss', function () {
 
         describe('price goes down to 8p and goes up to 11p again', function () {
             describe('stop loss', function () {
-                it.only('should not trigger to sell sticok automatically - 1.6', function (done) {
+                it('should not trigger to sell sticok automatically - 1.6', function (done) {
                     var buyingPrice = 10;
                     var newPrice1 = 8;
                     var newPrice2 = 11;
