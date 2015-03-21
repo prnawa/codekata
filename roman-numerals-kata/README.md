@@ -27,10 +27,10 @@ M      | 1,000
 > I want to be able to convert a number to a numeral
 > So that I can replace Arabic Numbers with Roman numerals
 
-* Given I have started the converter
-  When I enter $number
-  Then $numeral is returned
+* > **Given** I have started the converter
+  > **When** I enter $number
+  > **Then** $numeral is returned
 
-* Given I have started the converter
-  When I enter something that is not an Arabic number
-  Then I should receive an error
+* > **Given** I have started the converter
+  > **When** I enter something that is not an Arabic number
+  > **Then** I should receive an error
